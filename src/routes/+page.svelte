@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Svelte!</h1>
+
+<style>
+  h1 {
+    align-self: center;
+    margin: auto;
+    font-size: 100px;
+    color: #ff521b;
+  }
+</style>
