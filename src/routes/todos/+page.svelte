@@ -1,29 +1,14 @@
 <script lang="ts">
   import { crossfade } from "svelte/transition";
   import { flip } from "svelte/animate";
-  import { quintOut } from "svelte/easing";
-  import type { ActionData, PageData } from "./$types";
   import { enhance } from "$app/forms";
+  import type { ActionData, PageData } from "./$types";
 
   export let data: PageData;
   export let form: ActionData;
 
   const [send, receive] = crossfade({
     duration: (d: number) => Math.sqrt(d * 200),
-
-    fallback: (node: Element, params) => {
-      const style = getComputedStyle(node);
-      const transform = style.transform === "none" ? "" : style.transform;
-
-      return {
-        duration: 600,
-        easing: quintOut,
-        css: (t) => `
-					transform: ${transform} scale(${t});
-					opacity: ${t}
-				`,
-      };
-    },
   });
 </script>
 
