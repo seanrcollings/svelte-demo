@@ -1,10 +1,9 @@
 <nav>
   <a href="/counter">Counter</a>
-  <a href="/counter/fancy">Fancy Counter</a>
   <a href="/transitions">Transitions</a>
+  <a href="/stores">Stores</a>
   <a href="/counter/kit">Counter + SvelteKit</a>
   <a href="/todos">Todos</a>
-  <a href="/stores">Stores</a>
 </nav>
 
 <main>
