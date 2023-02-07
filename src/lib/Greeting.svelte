@@ -1,10 +1,12 @@
 <script>
   import { name } from "./stores";
+
+  export let greet = "Hello";
 </script>
 
 {#if $name}
   <h1>
-    Hello, {$name}!
+    {greet}, {$name}!
   </h1>
 {:else}
   <div />
